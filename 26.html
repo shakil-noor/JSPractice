@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Exersize</title>
+</head>
+<body>
+  <h2>Date Method</h2>
+
+  <script>
+    var d = new Date();
+    console.log(d.toString());
+    
+    //Get Method
+    console.log("Date = "+ d.getDate());
+    console.log("Day = "+ d.getDay());
+    console.log("Year = "+ d.getFullYear());
+    console.log("Hours = "+ d.getHours());
+    console.log("Time = "+ d.getTime());
+    
+    //Set Method
+    console.log("---------Set Method--------")
+    d.setDate(31);
+    console.log("Date = "+ d.getDate());
+    
+    d.setYear(2054);
+    console.log("Year = "+ d.getFullYear());
+    
+    d.setTime(1559291010826);
+    console.log("Time = "+ d.toString());
+    
+    //Parsing
+    console.log("---------parsing--------");
+    var msec = Date.parse('Dec 31, 2016');
+    d.setTime(msec);
+    console.log("Time = "+ d.toString());
+    
+    //Compare dates
+    var today, anotherDay;
+    today = new Date('12/12/2021');
+    //today = new Date();
+    someday = new Date();
+    someday.setFullYear(2020,0,10);
+    
+    if(someday > today){
+      console.log("Today is before January the 10th, 2020");
+    }else{
+      console.log("Today is after January the 10th 2020");
+    }
+    
+  </script>
+</body>
+</html>

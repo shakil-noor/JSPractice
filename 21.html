@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+  
+</head>  
+<body>  
+<p>Welcome to JavaScript</p> 
+<h2>Number Method</h2>
+<script>  
+  var x = 123;
+  var y = 9.656;
+  var result1 = true;
+  var result2 = false;
+  
+  //toString()
+  console.log("-------toString------");
+  console.log(x.toString());
+  console.log((456).toString());
+  console.log((100+20).toString());
+  
+  //toExponential()
+  console.log("-------toExponential------");
+  console.log(y.toExponential());
+  console.log(y.toExponential(2));
+  console.log(y.toExponential(4));
+  
+  //toFixed() It round the number
+  console.log("-------toFixed------");
+  console.log(y.toFixed());
+  console.log((9.41).toFixed());
+  
+  // toPrecision() It takes only 1 to 20 as parameter
+  console.log("-------toPrecision------");
+  console.log(y.toPrecision());
+  console.log(y.toPrecision(2));
+  console.log(y.toPrecision(5));
+  
+  // valueOf()
+  console.log("-------valueOf------");
+  console.log(x.valueOf());
+  console.log((123).valueOf());
+  console.log((100+20).valueOf());
+  
+  //Converting variables to number
+  //Number()
+  console.log("-------Number()------");
+  console.log(Number(result1));
+  console.log(Number(result2));
+  console.log(Number("10"));
+  console.log(Number("10 years"));
+  console.log(Number("10 20"));
+  
+  //parseInt()
+  console.log("-------parseInt()------");
+  console.log(parseInt(result1));
+  console.log(parseInt(result2));
+  console.log(parseInt("10"));
+  console.log(parseInt("10 years"));
+  console.log(parseInt("10 20"));
+  console.log(parseInt("years 10"));
+  
+  //parseFloat()
+  console.log("-------parseFloat()------");
+  console.log(parseFloat(result1));
+  console.log(parseFloat(result2));
+  console.log(parseFloat("10"));
+  console.log(parseFloat("10 years"));
+  console.log(parseFloat("10 20"));
+  console.log(parseFloat("years 10"));
+  
+  //Number Properties
+  console.log('max value of js number = '+Number.Max_vaule);
+  console.log('max value of js number = '+Number.Min_vaule);
+  console.log('max value of js number = '+Number.NEGATIVE_INFINITY);
+  console.log('max value of js number = '+Number.POSITIVE_INFINITY);
+  
+</script> 
+
+</body>  
+</html> 

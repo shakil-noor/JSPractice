@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Exersize</title>
+</head>
+<body>
+  <h2>Arrays</h2>
+
+  <script>
+    var cars = ['Merc','BMW','Fiat'];
+    cars.push('volvo');
+    console.log(cars, typeof cars);
+    console.log(cars[3]);
+    
+    var cars2 = new Array('Nissan', 'Subaru');
+    console.log(cars2);
+    
+    var person = {firstName: 'Shakil', lastName:'Doe'};
+    console.log(person.firstName);
+    
+    var mixedArray = [];
+    mixedArray[0] = new Date('12/10/2016');
+    mixedArray[1] = function myFunction(){
+      console.log("helo");
+    };
+    mixedArray[2] = cars;
+    
+    console.log(mixedArray);
+    
+    console.log(cars.length);
+    console.log(cars.sort()); //it sort alpitic order
+    
+    for(i=0; i<cars.length; i++){
+      console.log(cars[i]);
+    }
+    
+    //if the variable is an array
+    console.log(Array.isArray(cars));
+    console.log(cars instanceof Array);
+  </script>
+</body>
+</html>
